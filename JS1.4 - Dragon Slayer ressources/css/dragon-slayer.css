@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height : 200vh;
+    margin : 0;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-attachment : fixed;
+    background-repeat: no-repeat;
+    font-family: 'Germania One', cursive;
+    font-size: 2.5vw;
+    line-height : 1.4;
+}
+
+img {
+    max-width: 100%;
+    height : auto;
+}
+
+figure {
+    margin : 0;
+}
+
+header {
+    position : fixed;
+    top : 1rem;
+    left : 2.5rem; right : 2.5rem;
+    z-index : 100;
+    font-size : 1.1vmax;
+}
+
+header * {
+    margin : 0;
+}
+
+h1 {
+    font-size: 3vmax;
+}
+
+h2, h3 {
+    margin : 0;
+    text-align: center;
+}
+h2 {
+    font-size: 3.5vw;
+}
+
+h3 {
+    margin : 1em 5% 0;
+    padding-top : 1rem;
+    border-top : 2px dotted black;
+    font-size: 5vw;
+}
+
+.work {
+    position : relative;
+    max-width : 1200px;
+    margin-right : auto;
+    margin-left : auto;
+}
+
+
+.game{
+    position : absolute;
+    z-index : 50;
+    top : calc( 3rem + ( 4.1vmax * 1.4 ) );
+    left : 2.5rem; right : 2.5rem;
+    height : 80vh;
+    overflow-y : auto;
+    padding-top : 5vw;
+    padding-left : 5%;
+    padding-right : 5%;
+    background: rgba(255,255,255,0.6);
+    border-radius: 1rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+}
+
+/* Animated clouds */
+.cloud {
+    position: fixed;
+    z-index:10;
+    opacity: 0.8;
+    animation: cloudPassingBy linear infinite;
+}
+
+#cloud1 {
+    top:2vw;
+    left:-20vw;
+    width: 20%;
+    animation-duration: 50s;
+}
+
+#cloud2 {
+    top:10vw;
+    left:-20vw;
+    width: 20%;
+    animation-duration: 30s;
+}
+
+@keyframes cloudPassingBy {
+    from { transform: translateX(0px); }
+    to { transform: translateX(600%); }
+}
+
+
+/* its my work */
+input{
+    width: 300px;
+    margin-left: 150px;
+   
+    
+
+}
+.startGame{
+    background-color: #f8931f;
+    color: aliceblue;
+    box-shadow: #d3801d;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: 500;
+    cursor: pointer;
+   
+}
+.restart{
+    background-color: #f8931f;
+    color: aliceblue;
+    box-shadow: #d3801d;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: 500;
+    padding: 5px;
+}
+button:hover{
+  background-color:#d3801d;
+}
+
+
+.title{
+   
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+#container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    
+}
+.styling{
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     color:wheat;
+    
+}
+.test{
+    display: flex;
+    justify-content: space-around;
+}
+.modify{
+    font-size: 2rem;
+    color: black;
+    border: 1px solid red;
+    padding: 10px;
+
+}
+.home{
+    display: grid;
+    grid-template-columns: auto auto;
+   
+}
+.anotherChange{
+    font-size: 1.5rem;
+    width: 250px;
+}
+.mode{
+    text-align: center;
+    
+    color: blue;
+    font-size: 7rem;
+    
+   
+   border: 1px solid;
+   
+    margin: 20px;
+    
+   
+    
+}
+.disScreen{
+    display: block;
+}
